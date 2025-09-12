@@ -151,8 +151,8 @@ if __name__ == '__main__':
     else:
         DEVICE = "cuda"
 
-    AZURE_API_KEY = "9RYmFkWnYWpUj8KtDwI4IRdD5JSukqAB9hrLGSpPyNvqTg0zhkVGJQQJ99BIACfhMk5XJ3w3AAAAACOGvAGR"#os.getenv("AZURE_API_KEY")
-    AZURE_API_ENDPOINT ="https://23098-mf2dna94-swedencentral.cognitiveservices.azure.com/" #os.getenv("AZURE_API_ENDPOINT")
+    AZURE_API_KEY = os.getenv("AZURE_API_KEY")
+    AZURE_API_ENDPOINT = os.getenv("AZURE_API_ENDPOINT")
 
     if not (AZURE_API_KEY and AZURE_API_ENDPOINT):
         print("\n" + "="*50)
